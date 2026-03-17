@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sudoku-grid-extractor"
+version = "0.1.0"
+description = "Extract sudoku grids from images using OpenCV and Tesseract OCR"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python",
+    "pytesseract",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "hypothesis",
+]
